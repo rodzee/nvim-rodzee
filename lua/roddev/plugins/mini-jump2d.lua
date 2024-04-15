@@ -6,7 +6,7 @@ return {
 
 		mini.setup({
 			mappings = {
-				start_jumping = "f",
+				start_jumping = "<CR>",
 			},
 		})
 	end,
