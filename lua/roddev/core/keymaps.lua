@@ -5,6 +5,10 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- Save All / Close All
+keymap.set("n", "<leader>sa", ":wa<CR>", { desc = "Save All Files" })
+keymap.set("n", "<leader>q", ":qa<CR>", { desc = "Quit All Files" })
+
 -- Increment / Decrement Numbers
 keymap.set("n", "<leader>-", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>+", "<C-x>", { desc = "Decrement number" })
