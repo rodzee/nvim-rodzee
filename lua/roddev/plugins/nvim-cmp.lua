@@ -41,6 +41,26 @@ return {
 				["<C-f>"] = cmp.mapping.scroll_docs(4),
 				["<C-s>"] = cmp.mapping.complete(), -- show completion suggestions
 				["<C-e>"] = cmp.mapping.abort(), -- close completion window
+				["<Tab>"] = cmp.mapping(function(fallback)
+					if cmp.visible() then
+						cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
+					elseif luasnip.expand_or_jumpable() then
+						luasnip.expand_or_jump()
+					elseif has_words_before() then
+						cmp.complete()
+					else
+						fallback()
+					end
+				end, { "i", "s" }),
+				["<S-Tab>"] = cmp.mapping(function(fallback)
+					if cmp.visible() then
+						cmp.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
+					elseif luasnip.jumpable(-1) then
+						luasnip.jump(-1)
+					else
+						fallback()
+					end
+				end, { "i", "s" }),
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
 			}),
 			-- sources for autocompletion
