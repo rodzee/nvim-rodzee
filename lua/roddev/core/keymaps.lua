@@ -30,10 +30,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current Buffer
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current line Up" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current line Down" })
 
--- Cursor keeps in the center
-keymap.set("n", "j", "jzz")
-keymap.set("n", "k", "kzz")
-
 -- Search movement keeps cursor in middle
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
