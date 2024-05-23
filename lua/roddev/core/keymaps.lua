@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+-- Set the sequence jk to ESC
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
@@ -30,14 +31,27 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current Buffer
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current line Up" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current line Down" })
 
--- Search movement keeps cursor in middle
-keymap.set("n", "n", "nzzzv")
-keymap.set("n", "N", "Nzzzv")
+-- Press gx to open the link under the cursor
+keymap.set("v", "gl", ":sil !open <cWORD><cr>", { desc = "[G]o to [L]ink" })
 
--- Vertical movement keeps cursor in middle
-keymap.set("n", "<C-j>", "<C-d>zz")
-keymap.set("n", "<C-k>", "<C-u>zz")
+-- Press 'H', 'L' to jump to start/end of a line (first/last char)
+keymap.set("n", "L", "$")
+keymap.set("n", "H", "^")
 
--- Vertical movement keeps cursor in middle (visual mode)
-keymap.set("v", "<C-j>", "<C-d>zz")
-keymap.set("v", "<C-k>", "<C-u>zz")
+-- Press 'U' for redo
+keymap.set("n", "U", "<C-r>")
+
+-- Center buffer while navigating
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "{", "{zz")
+keymap.set("n", "}", "}zz")
+keymap.set("n", "N", "Nzz")
+keymap.set("n", "n", "nzz")
+keymap.set("n", "G", "Gzz")
+keymap.set("n", "gg", "ggzz")
+keymap.set("n", "<C-i>", "<C-i>zz")
+keymap.set("n", "<C-o>", "<C-o>zz")
+keymap.set("n", "%", "%zz")
+keymap.set("n", "*", "*zz")
+keymap.set("n", "#", "#zz")
