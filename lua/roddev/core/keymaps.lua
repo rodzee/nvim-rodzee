@@ -31,8 +31,8 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current Buffer
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current line Up" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current line Down" })
 
--- Press gx to open the link under the cursor
-keymap.set("v", "gl", ":sil !open <cWORD><cr>", { desc = "[G]o to [L]ink" })
+-- Press gl to open the link under the cursor
+keymap.set("n", "gl", ":sil !open <cWORD><cr>", { desc = "Go to Link" })
 
 -- Press 'H', 'L' to jump to start/end of a line (first/last char)
 keymap.set("n", "L", "$")
