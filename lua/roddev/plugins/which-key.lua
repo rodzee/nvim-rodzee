@@ -12,6 +12,9 @@ return {
 			["<leader>"] = {
 				c = {
 					name = " Code Actions",
+					opts = {
+						desc = "Code Actions",
+					},
 				},
 				e = {
 					name = " Explorer",
@@ -21,6 +24,9 @@ return {
 				},
 				h = {
 					name = " Git",
+					opts = {
+						desc = " Git",
+					},
 				},
 				l = {
 					name = " Lazy Git",
@@ -33,6 +39,9 @@ return {
 				},
 				r = {
 					name = " Rename",
+					opts = {
+						desc = " Rename",
+					},
 				},
 				s = {
 					name = " Split Window",

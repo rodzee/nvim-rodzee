@@ -25,7 +25,6 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.termguicolors = true
-opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- Backspace
