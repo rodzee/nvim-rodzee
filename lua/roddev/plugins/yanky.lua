@@ -33,10 +33,10 @@ return {
 			{ "=p", "<Plug>(YankyPutAfterFilter)", desc = "Put after applying a filter" },
 			{ "=P", "<Plug>(YankyPutBeforeFilter)", desc = "Put before applying a filter" },
 		},
-		--[[ config = function()
+		config = function()
 			require("yanky").setup({})
-			vim.api.nvim_set_hl(0, "YankyYanked", { bg = "#f9f3ed" })
-			vim.api.nvim_set_hl(0, "YankyPut", { bg = "#f9f3ed" })
-		end, ]]
+			vim.api.nvim_set_hl(0, "YankyYanked", { bg = "#A7A9EF" })
+			vim.api.nvim_set_hl(0, "YankyPut", { bg = "#A7A9EF" })
+		end,
 	},
 }

@@ -4,7 +4,6 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = require("neofusion.lualine"),
 				section_separators = { left = "", right = "" },
 				component_separators = { "" },
 			},
