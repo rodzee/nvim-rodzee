@@ -11,11 +11,10 @@ return {
 			options = {
 				mode = "tabs",
 				separator_style = "thin",
-				indicator_style = "| ",
 				color_icons = true,
 				show_buffer_close_icons = false,
 				show_close_icon = false,
-				always_show_bufferline = false,
+				always_show_bufferline = true,
 				offsets = {
 					{
 						filetype = "NvimTree",
