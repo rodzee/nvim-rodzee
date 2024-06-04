@@ -39,9 +39,15 @@ return {
 		local keymap = vim.keymap -- for conciseness
 
 		keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find opened buffers" })
+		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files in current buffer" })
 		keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", { desc = "Find string reference" })
 		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in current buffer" })
-		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+		keymap.set(
+			"n",
+			"<leader>fy",
+			"<cmd>Telescope lsp_document_symbols<cr>",
+			{ desc = "Find symbols in current buffer" }
+		)
 	end,
 }
