@@ -27,7 +27,7 @@ return {
 				style_preset = bufferline.style_preset.no_bold,
 			},
 		})
-		vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
-		vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
+		-- vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
+		-- vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
 	end,
 }
