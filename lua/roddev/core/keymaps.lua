@@ -4,6 +4,8 @@ local keymap = vim.keymap
 
 -- Set the sequence jk to ESC
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
+-- Clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Save All / Close All
@@ -28,8 +30,8 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous Tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current Buffer in new Tab" })
 
 -- Visual Maps
-keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current line Up" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current line Down" })
+keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current line Up" })
 
 -- Press gl to open the link under the cursor
 keymap.set("n", "gl", ":sil !open <cWORD><cr>", { desc = "Go to Link" })

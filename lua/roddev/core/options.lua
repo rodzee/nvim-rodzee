@@ -23,6 +23,7 @@ opt.cmdheight = 0
 -- Search Settings
 opt.ignorecase = true
 opt.smartcase = true
+opt.inccommand = "split"
 
 opt.termguicolors = true
 opt.signcolumn = "yes"
