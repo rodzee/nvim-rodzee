@@ -12,6 +12,7 @@ return {
 		ft_to_parser.mdx = "markdown"
 
 		-- configure treesitter
+		---@diagnostic disable-next-line: missing-fields
 		treesitter.setup({ -- enable syntax highlighting
 			highlight = {
 				enable = true,
