@@ -8,54 +8,19 @@ return {
 	opts = {},
 	config = function()
 		local wk = require("which-key")
-		wk.register({
-			["<leader>"] = {
-				c = {
-					name = " Code Actions",
-					opts = {
-						desc = "Code Actions",
-					},
-				},
-				e = {
-					name = " Explorer",
-				},
-				f = {
-					name = " Fuzzy Find",
-				},
-				h = {
-					name = " Git",
-					opts = {
-						desc = " Git",
-					},
-				},
-				l = {
-					name = " Lazy Git",
-				},
-				m = {
-					name = " Format",
-				},
-				n = {
-					name = " Clear Search",
-				},
-				r = {
-					name = " Rename",
-					opts = {
-						desc = " Rename",
-					},
-				},
-				s = {
-					name = " Split Window",
-				},
-				t = {
-					name = " Tabs",
-				},
-				w = {
-					name = " Session",
-				},
-				x = {
-					name = " Diagnostics",
-				},
-			},
+		wk.add({
+			{ "<leader>c", group = "Code Actions" },
+			{ "<leader>e", group = "Explorer" },
+			{ "<leader>f", group = "Fuzzy Find" },
+			{ "<leader>h", group = "Git" },
+			{ "<leader>l", group = "Lazy Git" },
+			{ "<leader>m", group = "Format" },
+			{ "<leader>n", group = "Clear Search" },
+			{ "<leader>r", group = "Rename" },
+			{ "<leader>s", group = "Split Window" },
+			{ "<leader>t", group = "Tabs" },
+			{ "<leader>w", group = "Session" },
+			{ "<leader>x", group = "Diagnostics" },
 		})
 	end,
 }

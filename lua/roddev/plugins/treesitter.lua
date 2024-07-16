@@ -8,8 +8,8 @@ return {
 	config = function()
 		-- import nvim-treesitter plugin
 		local treesitter = require("nvim-treesitter.configs")
-		local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
-		ft_to_parser.mdx = "markdown"
+		-- local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
+		-- ft_to_parser.mdx = "markdown"
 
 		-- configure treesitter
 		---@diagnostic disable-next-line: missing-fields
