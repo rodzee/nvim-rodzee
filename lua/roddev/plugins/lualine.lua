@@ -6,6 +6,9 @@ return {
 			options = {
 				section_separators = { left = "", right = "" },
 				component_separators = { "" },
+				disabled_filetypes = {
+					"NvimTree",
+				},
 			},
 			sections = {
 				lualine_a = { "mode" },
