@@ -1,2 +1,2 @@
-require("roddev.core")
-require("roddev.lazy")
+require("rodzee.core")
+require("rodzee.lazy")

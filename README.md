@@ -1,5 +1,43 @@
 # Great Neovim Setup for Web Development
 
-This setup was created by the awesome [Josean Martinez](https://www.josean.com)
+## Requirements (MacOS/Homebrew)
 
-You can follow the same setup by [video](https://www.youtube.com/watch?v=6pAG3BHurdM&t=1986s&ab_channel=JoseanMartinez) and/or follow his [post](https://www.josean.com/posts/how-to-setup-neovim-2024) where he has a step by step instruction.
+_LazyVim is the package manager_
+
+- Node.js Latest
+
+```
+    brew install node
+```
+
+- Ripgrep
+
+```
+    brew install ripgrep
+```
+
+- Nerd Font
+
+```
+    brew tap homebrew/cask-fonts
+```
+
+```
+    brew install --cask font-jetbrains-mono-nerd-font
+```
+
+- Lazygit
+
+```
+    brew install jesseduffield/lazygit/lazygit
+```
+
+- Neovim 0.10.0 or higher
+
+```
+    brew install neovim
+```
+
+This setup was based on [Josean Martinez](https://www.josean.com) and [Typecraft](https://www.typecraft.dev/)
+
+_I didn't add install steps for any Linux distro package manager, because there is many options._
