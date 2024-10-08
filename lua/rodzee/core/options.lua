@@ -37,6 +37,8 @@ opt.clipboard:append("unnamedplus")
 -- Split Windows
 opt.splitright = true
 opt.splitbelow = true
+opt.splitkeep = "screen"
+opt.laststatus = 3
 
 -- Enable cursor line highlight
 opt.cursorline = true
